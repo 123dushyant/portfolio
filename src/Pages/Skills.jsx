@@ -12,7 +12,7 @@ import image10 from "../assets/image10.jpg";
 
 const Skills = () => {
     return (
-            <div className="banner w-full h-screen bg-customGray">
+            <div className="banner overflow-hidden w-full h-screen bg-customGray">
                 <div className="slider" style={{ "--quantity": 10 }}>
                     <div className="item" style={{ "--position": 1 }}>
                         <img src={image1} alt="Image 1" />

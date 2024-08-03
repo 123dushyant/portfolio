@@ -4,7 +4,7 @@ import logo from '../assets/Logo-Springdale.png';
 
 const Navbar = () => {
     return(
-      <div className="Relative">
+      <div className="Relative overflow-hidden">
         <div className="bg-white bg-opacity-75">
         <header className="absolute inset-x-0 top-0 z-50">
           <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">

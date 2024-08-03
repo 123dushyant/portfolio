@@ -19,7 +19,7 @@ const Home = () => {
                     </div>
                     <div className="button relative mt-[90px] lg:mt-[80px] md:mt-[70px] sm:mt-[60px]">
             <a href="#contact" className="inline-block p-5 border-2 border-solid  border-transparent rounded-full bg-transparent text-yellow-500 w-[90px] h-[90px] lg:w-[80px] lg:h-[80px] md:w-[70px] md:h-[70px] sm:w-[60px] sm:h-[60px] text-center transition-all duration-300 ease-in-out hover:scale-110">
-                <span className="arrow block text-[35px] lg:text-[30px] md:text-[25px] sm:text-[20px] text-white leading-[45px] lg:leading-[40px] md:leading-[35px] sm:leading-[30px]">↓</span>
+                <span className="arrow block text-[35px] lg:text-[30px] md:text-[25px] sm:text-[30px] text-white leading-[45px] lg:leading-[40px] md:leading-[35px] sm:leading-[30px]">↓</span>
             </a>
         </div>
                 </div>

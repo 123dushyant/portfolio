@@ -23,7 +23,7 @@ const ConnectSection = () => {
   }, []);
 
   return (
-    <div className="white-section bg-customGray">
+    <div className="white-section overflow-hidden bg-customGray">
       <div
         ref={sectionRef}
         className={`connect-section  ${shrink ? 'shrink' : ''}`}>

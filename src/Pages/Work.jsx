@@ -5,7 +5,7 @@ import work2 from "../assets/work2.jpg"
 
 const Work = () => {
     return (
-      <div className="font-sans">
+      <div className="font-sans overflow-hidden">
         <div className="header font-extrabold text-white text-[100px] lg:text-[350px] w-full h-screen bg-customGray top-0 sticky text-center flex items-center justify-center">
             <h1 id="scale1" className="scale-y">WORK</h1>
             </div>

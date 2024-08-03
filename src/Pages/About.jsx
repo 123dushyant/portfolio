@@ -16,8 +16,8 @@ const About = () => {
                     </a>
                 </div>
             </div>
-            <div className="flex-1 lg:pl-20 pl-6 pt-10 lg:pt-32 sm:pt-10">
-                <div className="text-lg lg:text-2xl sm:text-2xl max-w-full">
+            <div className="flex-1 lg:pl-20 pr-5 align pl-6 pt-10 lg:pt-32 sm:pt-20">
+                <div className="text-lg lg:text-xl max-w-lg ">
                     I am proficient in technologies such as HTML, CSS, JavaScript, React, and Node.js, and I am constantly expanding my skill set to stay abreast of the latest industry trends. Collaboration and effective communication are at the core of my work ethic, allowing me to understand client needs and translate them into technical specifications and actionable plans.
                 </div>
             </div>

@@ -4,11 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-/* ////////////////////////////////////////    Home.jsx button-class    /////////////////////////////    */
-
+/* Home.jsx Button Class */
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -22,12 +18,11 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 403px;
-    width: 77px;
-    right: 0;
-    bottom: 0;
-    border-radius: 60% 50%;
-    padding: 4px; /* Adjust according to your desired line width */
+    left: 0; /* Centered by setting left to 0 */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 4px;
     background: conic-gradient(
         #ff5f6d,
         #ffc371,
@@ -42,7 +37,6 @@
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    
     animation: rotate 6s linear infinite;
     z-index: -1;
 }
@@ -52,220 +46,293 @@
     z-index: 1;
 }
 
-.expertise{
-  filter: brightness(0.9);
+.expertise {
+    filter: brightness(0.9);
 }
 
+/* Banner Styling */
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
 
+.banner .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autorun 20s linear infinite;
+}
 
+@keyframes autorun {
+    from {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
 
+.banner .slider .item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(420px);
+}
 
-/*  ///////////////////////////////////     Style.jsx banner-class     ///////////////////////////////////  */  
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .banner {
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        overflow: hidden;
-        position: relative;
-    }
-    .banner .slider {
-        position: absolute;
-        width: 100px;
-        height: 150px;
-        top: 600px;
-        left: calc(50% - 100px);
-        transform-style: preserve-3d;
-        transform: perspective(1000px);
-        animation: autorun 20s linear infinite;
-    }
-    @keyframes autorun {
-        from {
-            transform: perspective(1000px) rotateY(0deg);
-        }
-        to {
-            transform: perspective(1000px) rotateY(360deg);
-        }
-    }
-    .banner .slider .item {
-        position: absolute;
-        inset: 0 0 0 0;
-        transform: rotateY(
-                calc((var(--position) - 1) * (360deg / var(--quantity)))
-            )
-            translateZ(420px);
-    }
-    .banner .slider .item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .banner .content{
-        position: relative;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: min(1400px, 100vw);
-        height: max-content;
-        padding-bottom: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        align-item: center;
-    }
-    .banner .content h1{
-       font-family: 'ICA Rubrik';
-        font-size: 12em;
-        line-height: 1em;
-        color: transparent;
-        -webkit-text-stroke: 2px #fff;
+.banner .content {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1400px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    }
-    .banner .content .author{
-        font-family: Popins;
-        text-align: left;
-        max-width: 200px;
-        color: #fff;
-        padding-top: 250px;
-    }
-    .banner .content .author p{
-        width: 470px;
-        padding-right: 50px;
-        font-size: 20px;
-    }
+.banner .content h1 {
+    font-family: 'ICA Rubrik';
+    font-size: 6em;
+    line-height: 1em;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
 
-/* //////////////////////////////////////   ConnectSection css /////////////////////////    */
+.banner .content .author {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding-top: 2rem;
+}
 
+.banner .content .author p {
+    font-size: 1.25em;
+    margin-top: 1rem;
+}
+
+/* Connect Section Styling */
 .white-section {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:  #2c3539;
-  position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c3539;
+    position: relative;
 }
 
 .connect-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background: 	#FFF8DC;
-  color: black;
-  border-radius: 0;
-  transition: border-radius 0.5s ease-in-out, padding 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
-  padding: 50px;
-  margin: 0;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    height: 70%;
+    background: #FFF8DC;
+    color: black;
+    border-radius: 0;
+    transition: border-radius 0.5s ease-in-out, padding 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+    padding: 50px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .connect-section.shrink {
-  border-radius: 50px;
-  padding: 20px;
-  width: 80%;
-  height: 70%;
-  margin: 0 auto;
+    border-radius: 50px;
+    padding: 20px;
+    width: 80%;
+    height: 60%;
 }
 
 .connect-section h1 {
-  font-size: 3em;
-  margin: 20px 0;
+    font-size: 2em;
+    margin: 20px 0;
 }
 
 .connect-section h2 {
-  font-size: 1.5em;
-  margin: 10px 0;
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
 .connect-section a {
-  color: black;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
-  margin-top: 20px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 .connect-section a:hover {
-  background: #fff;
-  color: #000;
+    background: #fff;
+    color: #000;
 }
 
 .social-links {
-  display: flex;
-  align-item: left;
-  font-size: 11px;
-  width: 100%;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 20px;
+    justify-content: center;
 }
 
 .social-links a span {
-  border: solid 1px;
-  padding: 6px 16px;
-  border-radius: 12%;
-  color: white;
-  cursor: pointer;
-  transition: color 0.3s ease;
+    border: solid 1px;
+    padding: 6px 16px;
+    border-radius: 12%;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: 0 5px;
 }
 
-#social-buttons .social-links span:hover {
-  color: #007bff;
+.social-links span:hover {
+    color: #007bff;
 }
 
-
-
-#scale1 {
-  transform: scaleY(2.3);
-  
-}
-
-.Work1 {
-  index: 2;
-  
-} 
-
-
-
-
-/* ///////////////////////////////////////////   Work.jsx css  //////////////////////////////  */
-
-
-
-
+/* Work Section Styling */
 .card {
-  margin-left: 20px;
-  margin-right: 20px;
-  height: 100vh;
-  position: sticky;
-  top: 0;
+    margin: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .card img {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1%;
-  animation: zoom;
-  filter: brightness(0.5);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+    animation: zoom 10s infinite alternate;
+    filter: brightness(0.5);
 }
 
 .card-content {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#scale1 {
+    transform: scaleY(2.3);
+}
+
 #scale2 {
-  transform: scaleY(2.6);
+    transform: scaleY(2.6);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .banner .content h1 {
+        font-size: 4em;
+    }
+
+    .banner .content .author p {
+        font-size: 1em;
+    }
+
+    .connect-section {
+        width: 95%;
+        padding: 40px;
+    }
+
+    .connect-section.shrink {
+        width: 90%;
+        height: 60%;
+    }
+
+    .card {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .content h1 {
+        font-size: 3em;
+    }
+
+    .banner .content .author p {
+        font-size: 0.875em;
+    }
+
+    .connect-section {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .connect-section.shrink {
+        width: 90%;
+        height: 50%;
+    }
+
+    .social-links {
+        font-size: 0.875em;
+    }
+
+    .card {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .content h1 {
+        font-size: 2em;
+    }
+
+    .banner .content .author p {
+        font-size: 0.75em;
+    }
+
+    .connect-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .connect-section.shrink {
+        width: 100%;
+        height: 50%;
+    }
+
+    .social-links {
+        font-size: 0.75em;
+    }
+
+    .card {
+        margin: 0;
+        height: auto;
+    }
 }

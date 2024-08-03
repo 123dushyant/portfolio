@@ -12,53 +12,27 @@ import image10 from "../assets/image10.jpg";
 
 const Skills = () => {
     return (
-            <div className="banner overflow-hidden w-full h-screen bg-customGray">
-                <div className="slider" style={{ "--quantity": 10 }}>
-                    <div className="item" style={{ "--position": 1 }}>
-                        <img src={image1} alt="Image 1" />
-                    </div>
-                    <div className="item" style={{ "--position": 2 }}>
-                        <img src={image2} alt="Image 2" />
-                    </div>
-                    <div className="item" style={{ "--position": 3 }}>
-                        <img src={image3} alt="Image 3" />
-                    </div>
-                    <div className="item" style={{ "--position": 4 }}>
-                        <img src={image4} alt="Image 4" />
-                    </div>
-                    <div className="item" style={{ "--position": 5 }}>
-                        <img src={image5} alt="Image 5" />
-                    </div>
-                    <div className="item" style={{ "--position": 6 }}>
-                        <img src={image6} alt="Image 6" />
-                    </div>
-                    <div className="item" style={{ "--position": 7 }}>
-                        <img src={image7} alt="Image 7" />
-                    </div>
-                    <div className="item" style={{ "--position": 8 }}>
-                        <img src={image8} alt="Image 8" />
-                    </div>
-                    <div className="item" style={{ "--position": 9 }}>
-                        <img src={image9} alt="Image 9" />
-                    </div>
-                    <div className="item" style={{ "--position": 10 }}>
-                        <img src={image10} alt="Image 10" />
-                    </div>
-                </div>
-                <div className="content">
-                    <h1>
-                        MY SKILLS
-                    </h1>
-                <div className="author">
-                    <h2>ASHISH RANA</h2>
-                    <p><b>Web Designer</b></p>
-                    <p>
-                    I believe in continuous learning and staying updated with the latest trends and advancements in technology. My approach to development is user-centric, ensuring that the end product is intuitive, accessible, and meets the highest standards of quality.
-                    </p>
-                </div>
+        <div className="banner relative overflow-hidden w-full h-screen bg-customGray flex items-center justify-center">
+            <div className="slider absolute inset-0 flex">
+                <div className="flex w-full h-full">
+                    {[image1, image2, image3, image4, image5, image6, image7, image8, image9, image10].map((image, index) => (
+                        <div key={index} className="item flex-shrink-0 w-full h-full">
+                            <img src={image} alt={`Image ${index + 1}`} className="object-cover w-full h-full" />
+                        </div>
+                    ))}
                 </div>
             </div>
-        
+            <div className="content relative z-10 text-center text-white p-5 md:p-10">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">MY SKILLS</h1>
+                <div className="author">
+                    <h2 className="text-2xl md:text-3xl font-semibold mb-2">ASHISH RANA</h2>
+                    <p className="text-lg md:text-xl mb-4"><b>Web Designer</b></p>
+                    <p className="text-base md:text-lg">
+                        I believe in continuous learning and staying updated with the latest trends and advancements in technology. My approach to development is user-centric, ensuring that the end product is intuitive, accessible, and meets the highest standards of quality.
+                    </p>
+                </div>
+            </div>
+        </div>
     );
 };
 

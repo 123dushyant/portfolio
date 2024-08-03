@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return(
-      <div className="relative overflow-hidden">
+      <div className="relative ">
         <div className="bg-white bg-opacity-75">
           <header className="absolute inset-x-0 top-0 z-50">
             <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
               <div className="flex lg:flex-1">
                 <Link to="/" className="-m-1.5 p-1.5">
                   <span className="sr-only">Logo</span>
-                  <div className="text-black text-2xl md:text-3xl lg:text-3xl no-underline">ASHISH R.</div>
+                  <div className="text-white text-2xl md:text-3xl lg:text-3xl no-underline">ASHISH R.</div>
                 </Link>
               </div>
               <div className="flex lg:hidden">
@@ -22,13 +22,13 @@ const Navbar = () => {
                 </button>
               </div>
               <div className="hidden lg:flex lg:gap-x-12">
-                <Link to="/about" className="text-sm font-semibold leading-6 text-black">About</Link>
-                <Link to="#" className="text-sm font-semibold leading-6 text-black">Features</Link>
-                <Link to="#" className="text-sm font-semibold leading-6 text-black">Marketplace</Link>
-                <Link to="#" className="text-sm font-semibold leading-6 text-black">Company</Link>
+                <Link to="/about" className="text-sm font-semibold leading-6 text-white">About</Link>
+                <Link to="#" className="text-sm font-semibold leading-6 text-white">Features</Link>
+                <Link to="#" className="text-sm font-semibold leading-6 text-white">Marketplace</Link>
+                <Link to="#" className="text-sm font-semibold leading-6 text-white">Company</Link>
               </div>
               <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                <Link to="#" className="text-sm font-semibold leading-6 text-black border-2 border-solid border-black px-3 py-1 rounded-full">
+                <Link to="#" className="text-sm font-semibold leading-6 text-white border-2 border-solid border-white px-3 py-1 rounded-full">
                   Contact for Freelance <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>

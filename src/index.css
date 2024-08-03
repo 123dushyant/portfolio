@@ -18,10 +18,12 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0; /* Centered by setting left to 0 */
-    width: 100%;
+    left: 45%; /* Centered by setting left to 0 */
+    width: 10%;
     height: 100%;
-    border-radius: 50%;
+    align-item: center;
+    display: flex;
+    border-radius: 60%;
     padding: 4px;
     background: conic-gradient(
         #ff5f6d,

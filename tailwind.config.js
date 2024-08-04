@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'dm-serif': ['DM Serif Display', 'serif'],
+        'roboto': ['"Roboto Flex"', 'sans-serif'],
+
+      },
       colors: {
         customGray: '#2c3539',
       },

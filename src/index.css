@@ -63,10 +63,10 @@
 
 .banner .slider {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autorun 20s linear infinite;
@@ -74,56 +74,51 @@
 
 @keyframes autorun {
     from {
-        transform: perspective(1000px) rotateY(0deg);
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
     }
     to {
-        transform: perspective(1000px) rotateY(360deg);
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
     }
 }
 
 .banner .slider .item {
     position: absolute;
-    inset: 0;
-    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(420px);
+    inset: 0 0 0 0;
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(550px);
 }
 
 .banner .slider .item img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 60%;
     object-fit: cover;
 }
 
 .banner .content {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1400px;
+    width: min(1400px, 100vw);
+    height: max-content;
     padding-bottom: 100px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-align: center;
 }
 
 .banner .content h1 {
     font-family: 'ICA Rubrik';
-    font-size: 6em;
+    font-size: 13em;
     line-height: 1em;
-    color: transparent;
+    color: #25283B;
     -webkit-text-stroke: 2px #fff;
 }
 
 .banner .content .author {
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    padding-top: 2rem;
-}
-
-.banner .content .author p {
-    font-size: 1.25em;
-    margin-top: 1rem;
+    font-family: Poppins;
+    text-align: right;
+    max-width:300px;
 }
 
 /* Connect Section Styling */

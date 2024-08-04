@@ -13,7 +13,7 @@ const Work = () => {
                     <img src={work1} alt="card-img1" className="card-img w-full h-auto object-cover" />
                     <div className="card-content text-white p-4 flex items-center justify-center text-base lg:text-lg">
                         <div className="visit border-2 w-28 items-center flex justify-center border-solid border-white rounded-full">
-                            <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" className="block w-full h-full flex items-center justify-center">
+                            <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" className=" w-full h-full flex items-center justify-center">
                                 <button className="w-full h-full">Visit-</button>
                             </a>
                         </div>
@@ -23,7 +23,7 @@ const Work = () => {
                     <img src={work2} alt="card-img2" className="card-img w-full h-auto object-cover" />
                     <div className="card-content text-white p-4 flex items-center justify-center text-base lg:text-lg">
                         <div className="visit border-2 w-28 items-center flex justify-center border-solid border-white rounded-full">
-                            <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" className="block w-full h-full flex items-center justify-center">
+                            <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" className=" w-full h-full flex items-center justify-center">
                                 <button className="w-full h-full">Visit-</button>
                             </a>
                         </div>

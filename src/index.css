@@ -4,48 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Home.jsx Button Class */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+
+.home {
+    filter: brightness(0.9);
 }
 
-.button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 45%; /* Centered by setting left to 0 */
-    width: 10%;
-    height: 100%;
-    align-item: center;
-    display: flex;
-    border-radius: 60%;
-    padding: 4px;
-    background: conic-gradient(
-        #ff5f6d,
-        #ffc371,
-        #ffd700,
-        #32cd32,
-        #00fa9a,
-        #1e90ff,
-        #9370db,
-        #ff5f6d
-    );
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    animation: rotate 6s linear infinite;
-    z-index: -1;
-}
-
-.button {
-    position: relative;
-    z-index: 1;
+.about {
+    filter: brightness(0.9);
 }
 
 .expertise {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HomeContent = () => (
-    <div className="home-content flex justify-center items-center h-screen bg-customGray text-white pointer-events-auto">
+    <div className="home-content flex justify-center items-center h-screen bg-customGray text-slate-300 pointer-events-auto">
         <div className="text-center">
             <div className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl xl:mt-60 lg:mt-40 md:mt-40 sm:mt-20 mt-40 ">
                 <h1 className='xl:mr-32 lg:mr-20 md:mr-24 sm:mr-24 mr-16 ' >MULTI-</h1>

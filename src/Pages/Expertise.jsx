@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 const Expertise = () => {
     return (
-        <div className="expertise min-h-screen w-full bg-white flex flex-col md:flex-row overflow-hidden px-4 md:px-8">
-            <div className="relative md:pr-10 mt-12 md:mt-48 lg:mt-[130px] md:ml-4 lg:ml-20 w-full md:w-1/2">
+        <div className="expertise min-h-screen w-full bg-customGray flex flex-col md:flex-row overflow-hidden px-4 md:px-8">
+            <div className="relative md:pr-10 mt-12 md:mt-48 lg:mt-[130px] md:ml-4 lg:ml-10 xl:ml-10 w-full md:w-1/2">
                 <div className="text-[#E49B0F] mb-3 text-xl font-semibold">Expertise</div>
-                <div className="text-black text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 md:mb-10">
+                <div className="text-slate-300 font-dm-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold mb-6 md:mb-10">
                     My key area of expertise.
                 </div>
-                <div className="text-black text-base md:text-lg lg:text-xl mb-6 md:mb-10">
+                <div className="text-slate-200 text-base font-thin tracking-wide md:text-lg lg:text-xl mb-6 md:mb-10">
                     Proficient in full-stack web development, specializing in HTML, CSS, JavaScript, React, Angular, Node.js, and SQL. Dedicated to creating responsive, user-centric websites with optimized performance and exceptional UX/UI design.
                 </div>
                 <div className="flex justify-start">
-                    <Link to="#services" className="text-base md:text-lg px-4 md:px-6 py-2 md:py-3 border border-black rounded-lg transition-colors duration-300 hover:bg-black hover:text-white">
+                    <Link to="#services" className="text-base md:text-lg px-4 md:px-6 py-2 md:py-3 border border-orange-400 rounded-lg transition-colors duration-300 hover:bg-white hover:text-black text-white ">
                         View All Services
                     </Link>
                 </div>

@@ -4,7 +4,7 @@ import AboutContent from '../components/AboutContent';
 
 const About = () => {
     return (
-        <div className=" about overflow-hidden relative flex flex-col lg:flex-row bg-customGray text-white h-screen w-full pointer-events-none brightness-900 ">
+        <div className=" about overflow-hidden relative flex flex-col xl:flex-row bg-customGray text-white h-auto w-full border md:h-auto lg:h-auto xl:h-screen brightness-900 ">
             <AboutHeader />
             <AboutContent />
         </div>

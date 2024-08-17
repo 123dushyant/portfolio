@@ -49,7 +49,7 @@
 .banner .slider .item {
     position: absolute;
     inset: 0 0 0 0;
-    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(550px);
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(420px);
 }
 
 .banner .slider .item img {
@@ -76,7 +76,7 @@
     font-family: 'ICA Rubrik';
     font-size: 13em;
     line-height: 1em;
-    color: #25283B;
+    color: transparent;
     -webkit-text-stroke: 2px #fff;
 }
 
@@ -174,7 +174,9 @@
 
 /* Work Section Styling */
 .card {
-    margin: 20px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 100vh;
     position: sticky;
     top: 0;
@@ -185,7 +187,7 @@
 }
 
 .card img {
-    position: absolute;
+    position: relative;
     z-index: 1;
     left: 0;
     top: 0;
@@ -217,84 +219,3 @@
     transform: scaleY(2.6);
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
-    .banner .content h1 {
-        font-size: 4em;
-    }
-
-    .banner .content .author p {
-        font-size: 1em;
-    }
-
-    .connect-section {
-        width: 95%;
-        padding: 40px;
-    }
-
-    .connect-section.shrink {
-        width: 90%;
-        height: 60%;
-    }
-
-    .card {
-        margin: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .banner .content h1 {
-        font-size: 3em;
-    }
-
-    .banner .content .author p {
-        font-size: 0.875em;
-    }
-
-    .connect-section {
-        width: 95%;
-        padding: 30px;
-    }
-
-    .connect-section.shrink {
-        width: 90%;
-        height: 50%;
-    }
-
-    .social-links {
-        font-size: 0.875em;
-    }
-
-    .card {
-        margin: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner .content h1 {
-        font-size: 2em;
-    }
-
-    .banner .content .author p {
-        font-size: 0.75em;
-    }
-
-    .connect-section {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .connect-section.shrink {
-        width: 100%;
-        height: 50%;
-    }
-
-    .social-links {
-        font-size: 0.75em;
-    }
-
-    .card {
-        margin: 0;
-        height: auto;
-    }
-}

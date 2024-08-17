@@ -49,10 +49,10 @@ const Skills = () => {
             <h1>
                 MY SKILLS
             </h1>
-        <div className="author">
-            <h2>ASHISH RANA</h2>
+        <div className="author text-white lg:pl-12 md:pl-6">
+            <h2 className=" font-dm-serif text-2xl">ASHISH RANA</h2>
             <p><b>Web Designer</b></p>
-            <p>
+            <p className="font-dm-serif font-light">
             I believe in continuous learning and staying updated with the latest trends and advancements in technology. My approach to development is user-centric, ensuring that the end product is intuitive, accessible, and meets the highest standards of quality.
             </p>
         </div>

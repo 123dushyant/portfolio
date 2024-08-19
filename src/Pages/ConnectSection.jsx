@@ -23,10 +23,10 @@ const ConnectSection = () => {
   }, []);
 
   return (
-    <div className="white-section overflow-hidden bg-customGray py-12 px-6 sm:px-4">
+    <div className="white-section overflow-hidden bg-customGray py-1 px-6 sm:px-0">
       <div
         ref={sectionRef}
-        className={`connect-section ${shrink ? 'shrink' : ''} text-center space-y-6`}
+        className={`connect-section ${shrink ? 'shrink' : ''} text-center space-y-8`}
       >
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">GOT A PROJECT IN MIND?</h2>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">LET'S CONNECT</h1>
@@ -40,7 +40,7 @@ const ConnectSection = () => {
         <div id="social-buttons" className="social-links flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="https://www.instagram.com/_dushyant_thakur_01?igsh=OHpneGQxY200OXR0"
-            className="social-button bg-gray-800 text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-gray-600"
+            className="social-button  text-white py-2 px-0 rounded-full transition-colors duration-300 hover:bg-gray-600"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -48,7 +48,7 @@ const ConnectSection = () => {
           </a>
           <a
             href="#"
-            className="social-button bg-gray-800 text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-gray-600"
+            className="social-button  text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-gray-600"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,7 +56,7 @@ const ConnectSection = () => {
           </a>
           <a
             href="https://www.linkedin.com/in/ashish-rana-b23070267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            className="social-button bg-gray-800 text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-gray-600"
+            className="social-button text-white py-2 px-4 rounded-full transition-colors duration-300 hover:bg-gray-600"
             target="_blank"
             rel="noopener noreferrer"
           >

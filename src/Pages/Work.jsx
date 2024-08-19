@@ -2,10 +2,11 @@ import React from "react";
 import work1 from "../assets/work1.jpg";
 import work2 from "../assets/work2.jpg";
 
+
 const Work = () => {
     return (
         <div className="font-sans brightness-90">
-            <div className="header font-extrabold text-white text-4xl lg:text-6xl xl:text-7xl w-full h-screen bg-customGray top-0 sticky text-center flex items-center justify-center">
+            <div className="header font-extrabold text-slate-600 text-9xl lg:text-6xl xl:text-[22vw] w-full h-screen bg-customGray top-0 sticky text-center flex items-center justify-center">
                 <h1 id="scale1" className="scale-y">WORK</h1>
             </div>
             <div className="flex flex-wrap justify-center gap-4 p-4 lg:p-0">
@@ -30,9 +31,14 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer font-extrabold text-white text-4xl lg:text-6xl xl:text-7xl w-full h-screen bg-customGray top-0 sticky text-center flex items-center justify-center">
-                <h1 id="scale2" className="scale-y">LET'S COLLABORATE</h1>
+            
+            <div className="footer  text-white text-4xl lg:text-6xl xl:text-7xl w-full h-screen bg-customGray top-0 sticky text-start grid items-top justify-top ">
+                <h1 className=" text-8xl font-serif mt-24 mb-[-70px] ml-5">LET'S START</h1>
+                <h1 className="text-8xl font-serif mt-[-60px] text-center mr-[470px]">CREATE</h1>
+                <span className="text-8xl font-serif mt-[-130px] ml-5">TOGETHER</span>
+                <span className=" text-9xl font-extrabold ml-40">LET'S COLLABORATE </span>
             </div>
+            
         </div>
     );
 };

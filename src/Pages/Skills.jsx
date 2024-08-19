@@ -46,8 +46,7 @@ const Skills = () => {
             </div>
         </div>
         <div className="content">
-            <h1>
-                MY SKILLS
+            <h1 data-content="MY SKILSS">
             </h1>
         <div className="author text-white lg:pl-12 md:pl-6">
             <h2 className=" font-dm-serif text-2xl">ASHISH RANA</h2>
@@ -56,6 +55,7 @@ const Skills = () => {
             I believe in continuous learning and staying updated with the latest trends and advancements in technology. My approach to development is user-centric, ensuring that the end product is intuitive, accessible, and meets the highest standards of quality.
             </p>
         </div>
+        <div className="model"></div>
         </div>
     </div>
     );

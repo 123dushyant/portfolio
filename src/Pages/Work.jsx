@@ -33,10 +33,10 @@ const Work = () => {
             </div>
             
             <div className="footer  text-white text-4xl lg:text-6xl xl:text-7xl w-full h-screen bg-customGray top-0 sticky text-start grid items-top justify-top ">
-                <h1 className=" text-8xl font-serif mt-24 mb-[-70px] ml-5">LET'S START</h1>
-                <h1 className="text-8xl font-serif mt-[-60px] text-center mr-[470px]">CREATE</h1>
-                <span className="text-8xl font-serif mt-[-130px] ml-5">TOGETHER</span>
-                <span className=" text-9xl font-extrabold ml-40">LET'S COLLABORATE </span>
+                <h1 className=" text-5xl font-serif mt-24 mb-[-70px] ml-5">LET'S START</h1>
+                <h1 className="text-5xl sm:text-6xl ml-40 font-serif mt-[-60px] text-center mr-[470px]">CREATE</h1>
+                <span className="text-5xl font-serif mt-[-130px] ml-5">TOGETHER</span>
+                <span className=" text-[44px] font-extrabold ml-4 sm:ml-40 sm:text-9xl">LET'S COLLABORATE </span>
             </div>
             
         </div>

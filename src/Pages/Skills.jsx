@@ -45,7 +45,7 @@ const Skills = () => {
                 <img src={image10} alt="Image 10" />
             </div>
         </div>
-        <div className="content">
+        <div className="content w-40">
             <h1 data-content="MY SKILSS">
             </h1>
         <div className="author text-white lg:pl-12 md:pl-6">

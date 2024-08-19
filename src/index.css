@@ -98,7 +98,7 @@
 
 
 .banner .content .model {
-    background-image: url(src/assets/skillimg.png);
+    background-image: url(src/assets/skillimg.jpg);
     width: 100vh;
     height: 80vh;
     position: absolute;
@@ -349,7 +349,7 @@
     .banner .slider .item {
         position: absolute;
         inset: 0 0 0 0;
-        transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(185px);
+        transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(180px);
     }
 
     .banner .slider .item img {
@@ -365,12 +365,12 @@
     .banner .content .author {
         margin-bottom: -40px;
         margin-top: 70px;
-        margin-left: 44px;
+        margin-left: 40px;
         font-size: 20px;
     }
 
     .banner .content .model {
-        background-image: url(src/assets/skillimg.png);
+        background-image: url(src/assets/skillimg.jpg);
         width: 80vw;
         height: 74vh;
         text-align: top;

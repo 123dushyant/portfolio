@@ -370,6 +370,7 @@
     }
 
     .banner .content .model {
+        background-image: url(src/assets/skillimg.png);
         width: 80vw;
         height: 74vh;
         text-align: top;

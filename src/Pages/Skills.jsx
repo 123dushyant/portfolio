@@ -55,7 +55,6 @@ const Skills = () => {
             I believe in continuous learning and staying updated with the latest trends and advancements in technology. My approach to development is user-centric, ensuring that the end product is intuitive, accessible, and meets the highest standards of quality.
             </p>
         </div>
-        <div className="model"></div>
         </div>
     </div>
     );

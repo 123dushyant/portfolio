@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 
+body, html {
+    overflow-x: hidden;
+  }
+
 .home {
     filter: brightness(0.9);
 }
@@ -352,6 +356,13 @@
         overflow: hidden;
     }
 
+    .connect-section.shrink {
+        border-radius: 60px;
+        padding:20px;
+        width: 70%;
+        height: 60%;
+    }
+
     .connect-section h1 {
         font-size: 2em;
         margin: 20px 0;
@@ -361,7 +372,7 @@
         font-size: 1.5em;
         margin: 10px 0;
     }
-    
+
     .card {
         margin: 0px;
         margin-left: 0px;
@@ -406,6 +417,20 @@
     
     #scale2 {
         transform: scaleY(2.8);
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        width: 10%;
+        position: absolute;
+        bottom: 20px;
+        left: 40%;
+        justify-content: start;
+    }
+
+    .social-links.shrink {
     }
 }
 

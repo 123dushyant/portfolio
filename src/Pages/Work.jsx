@@ -36,7 +36,7 @@ const Work = () => {
                 <h1 className=" text-5xl font-serif mt-24 mb-[-70px] ml-5">LET'S START</h1>
                 <h1 className="text-5xl sm:text-6xl ml-40 font-serif mt-[-60px] text-center mr-[470px]">CREATE</h1>
                 <span className="text-5xl font-serif mt-[-130px] ml-5">TOGETHER</span>
-                <span className=" text-[34px] text-center justify-center font-extrabold ml-4 sm:ml-0 lg:text-7xl md:text-4xl sm:text-3xl">LET'S COLLABORATE </span>
+                <span className=" text-[34px] text-start justify-center font-extrabold ml-8 sm:ml-0 lg:text-7xl md:text-4xl sm:text-3xl">LET'S COLLABORATE </span>
             </div>
             
         </div>

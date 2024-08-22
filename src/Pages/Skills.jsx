@@ -46,9 +46,9 @@ const Skills = () => {
             </div>
         </div>
         <div className="content w-40">
-            <h1 data-content="MY SKILSS">
+            <h1 data-content="MY SKILLS">
             </h1>
-        <div className="author text-white lg:pl-12 md:pl-6">
+        <div className="author text-white pr-1 lg:pl-12 md:pl-6">
             <h2 className=" font-dm-serif text-2xl">ASHISH RANA</h2>
             <p><b>Web Designer</b></p>
             <p className="font-dm-serif font-light">

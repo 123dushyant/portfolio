@@ -23,13 +23,13 @@ const ConnectSection = () => {
   }, []);
 
   return (
-    <div className="white-section overflow-hidden bg-customGray py-1 px-6 sm:px-0">
+    <div className="white-section overflow-hidden bg-customGray py-1 px-0 sm:px-0">
       <div
         ref={sectionRef}
         className={`connect-section ${shrink ? 'shrink' : ''} text-center space-y-8`}
       >
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">GOT A PROJECT IN MIND?</h2>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">LET'S CONNECT</h1>
+        <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold">LET'S CONNECT</h1>
         <a
           id="Button"
           href="mailto:aaashishrana2002@gmail.com"

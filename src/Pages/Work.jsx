@@ -6,7 +6,7 @@ import work2 from "../assets/work2.jpg";
 const Work = () => {
     return (
         <div className="font-sans brightness-90">
-            <div className="header font-extrabold text-slate-200 text-8xl  lg:text-9xl xl:text-[22vw] w-full h-screen bg-customGray top-0 sticky text-center flex items-center justify-center">
+            <div className="header font-extrabold text-slate-200 text-8xl  lg:text-9xl xl:text-[22vw] w-full lg:h-screen h-[600px] bg-customGray top-0 sticky text-center flex items-center justify-center">
                 <h1 id="scale1" className="scale-y">WORK</h1>
             </div>
             <div className="flex flex-wrap justify-center gap-4 p-0 lg:p-0 bg-customGray">
